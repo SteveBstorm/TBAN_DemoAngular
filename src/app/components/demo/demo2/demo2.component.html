@@ -1,0 +1,13 @@
+<h3>Two-ways binding (lecture/écriture)</h3>
+<p>Valeur de ma propriété : {{texte}}</p>
+<p><input type="text" [(ngModel)]="texte"></p>
+
+<p><button (click)="maMethode()" [disabled]="isDisabled">Click ici</button></p>
+<p><button (click)="switchDisable()" [disabled]="texte != 'toto'" >Switch</button></p>
+
+<!--
+  {{prop}} One way (lecture)
+  [(ngModel)] Two way (lecture écriture)
+  (event) Event binding
+  [attribut] Attribute binding
+ -->
