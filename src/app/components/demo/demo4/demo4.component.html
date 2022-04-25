@@ -1,0 +1,28 @@
+<h4>Structural directives</h4>
+
+<div style="border : black 1px solid;">
+  <p style="background-color: lightgray;
+            border-bottom: 1px black solid;
+            cursor : pointer;"
+    (click)="switchVisible()"
+  >Click ici</p>
+  <p *ngIf="isVisible">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, pariatur iusto alias recusandae soluta incidunt doloremque enim vero hic dolorum labore voluptates animi voluptas quaerat mollitia a atque nesciunt ullam.</p>
+</div>
+
+<hr />
+
+<ul>
+  <li *ngFor="let s of monTableau; let i = index; let isPair = even">
+    <p [ngClass]="isPair ? 'maclasse': ''">{{i}} - {{s}}</p>
+  </li>
+</ul>
+
+<hr />
+
+<input [(ngModel)]="maValeur" />
+<div [ngSwitch]="maValeur">
+  <p *ngSwitchCase="1">Pomme</p>
+  <p *ngSwitchCase="2">Poire</p>
+  <p *ngSwitchCase="3">Peche</p>
+  <p *ngSwitchDefault>Entrez 1 2 ou 3</p>
+</div>

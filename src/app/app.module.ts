@@ -12,6 +12,10 @@ import { NavComponent } from './components/nav/nav.component';
 import { FormsModule } from '@angular/forms';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { EurtobtcPipe } from './shared/eurtobtc.pipe';
+import { ExercicesComponent } from './components/exercices/exercices.component';
+import { Exo1Component } from './components/exercices/exo1/exo1.component';
+import { TotimePipe } from './shared/totime.pipe';
+import { Demo4Component } from './components/demo/demo4/demo4.component';
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { EurtobtcPipe } from './shared/eurtobtc.pipe';
     Demo2Component,
     NavComponent,
     Demo3Component,
-    EurtobtcPipe
+    EurtobtcPipe,
+    ExercicesComponent,
+    Exo1Component,
+    TotimePipe,
+    Demo4Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<h3>
+  Chronomètre
+</h3>
+<p>{{time | totime}}</p>
+
+<p>
+  <button (click)="start()" [disabled]="timer">Start</button> &nbsp;
+  <button (click)="pause()" [disabled]="!timer">Pause</button> &nbsp;
+  <button (click)="reset()" [disabled]="time <= 0">Reset</button> &nbsp;
+</p>
