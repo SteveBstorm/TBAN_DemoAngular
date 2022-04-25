@@ -1,5 +1,5 @@
 Navigation :
-<ul>
+<!-- <ul>
   <li><a routerLink="about">About</a></li>
   <li><a routerLink="home">Home</a></li>
   <li>Les démos
@@ -14,5 +14,19 @@ Navigation :
     <ul>
       <li><a routerLink="exercices/exo1">Chronomètre</a></li>
     </ul>
+  </li>
+</ul> -->
+
+<ul>
+  <li *ngFor="let lien of listeLien; let i = index">
+    <a [routerLink]="lien.url"
+       (click)="toggleChildrenVisible(i)"
+       [ngClass]="{master : lien.children}"
+       >{{lien.title}}</a>
+       <ul *ngIf="lien.isChildrenVisible && lien.children">
+        <li *ngFor="let souslien of lien.children">
+          <a [routerLink]="souslien.url">{{souslien.title}}</a>
+        </li>
+       </ul>
   </li>
 </ul>
