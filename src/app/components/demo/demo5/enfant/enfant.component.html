@@ -1,0 +1,12 @@
+<p>enfant works!</p>
+<p>Valeur de infoduparent : {{infoduparent}}</p>
+<p>Valeur de fromParent : {{fromParent}}</p>
+
+<h3>
+  contenu qui vient de l'enfant
+</h3>
+<ng-content></ng-content>
+
+<hr />
+<p><button (click)="sendInfo('je suis l\'info 1 de l\'enfant')">Info 1</button></p>
+<p><button (click)="sendInfo('J\'adore faire chier mes parents')">Info 2</button></p>

@@ -1,0 +1,15 @@
+<p>demo5 works!</p>
+<div style="border : 1px black solid">
+  <app-enfant
+    infoduparent="Salut les gars !"
+    [fromParent]="toChildren"
+    (messageEvent)="receiveMessage($event)"
+    >
+    <p style="background-color : red;">
+      Contenu html venu du parent
+    </p>
+    <button>Mon bouton</button>
+  </app-enfant>
+</div>
+<p>Retour dans le parent</p>
+<p>Message de l'enfant : {{messageFromChildren}}</p>
