@@ -1,6 +1,7 @@
 import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { Link } from 'src/app/models/link.model';
+import { FakeauthService } from '../demo/demo6/fakeauth.service';
 
 @Component({
   selector: 'app-nav',

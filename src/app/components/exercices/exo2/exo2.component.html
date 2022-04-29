@@ -1,0 +1,9 @@
+<div style="border : black dashed 1px">
+  <p>Ajout article : </p>
+  <p><input type="text" [(ngModel)]="newArticle">
+     <button (click)="ajoutArticle()">Ajouter</button>
+  </p>
+</div>
+<div>
+  <app-exo2child [liste]="articleList" (deleteEvent)="supprimer($event)"></app-exo2child>
+</div>
