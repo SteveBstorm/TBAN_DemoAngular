@@ -22,6 +22,8 @@ import { Exo2Component } from './components/exercices/exo2/exo2.component';
 import { Exo2childComponent } from './components/exercices/exo2/exo2child/exo2child.component';
 import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { Exo3Component } from './components/exercices/exo3/exo3.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Demo7Component } from './components/demo/demo7/demo7.component';
 
 
 @NgModule({
@@ -44,12 +46,14 @@ import { Exo3Component } from './components/exercices/exo3/exo3.component';
     Exo2Component,
     Exo2childComponent,
     Demo6Component,
-    Exo3Component
+    Exo3Component,
+    Demo7Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

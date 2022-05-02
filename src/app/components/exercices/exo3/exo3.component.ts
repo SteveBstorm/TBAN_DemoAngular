@@ -10,9 +10,16 @@ import { ShopService } from './services/shop.service';
 export class Exo3Component implements OnInit {
 
   articleListCopy! : Article[]
-
+  // newArticleError! : string
+  // _newArticle! : string
   newArticle! : string
-
+  // set newArticle(value : string) {
+  //   if(value.length > 4)  {
+  //     this._newArticle = value
+  //     this.newArticleError = ""
+  //   }
+  //   else(this.newArticleError ="article doit contenir 4 caratères minimum")
+  // }
   constructor(
     private _shopService : ShopService
   ) { }

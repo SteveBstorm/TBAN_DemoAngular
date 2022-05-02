@@ -1,0 +1,28 @@
+<p>demo7 works!</p>
+<form [formGroup]="myFormGroup" (ngSubmit)="validateForm()">
+  <p>
+    Nom : <input type="text" formControlName="nom">
+  </p>
+  <p *ngIf="myFormGroup.controls['nom'].invalid && myFormGroup.controls['nom'].touched" style="color:red;">
+    Minimum 4 caractères
+  </p>
+  <p>
+    Quantité : <input type="number" formControlName="quantite">
+  </p>
+  <p>
+    Prix : <input type="number" formControlName="prix">
+  </p>
+  <p *ngIf="myFormGroup.controls['prix'].invalid && myFormGroup.controls['prix'].touched" style="color:red;">
+    Maximum 20 euros
+  </p>
+  <div>
+    Catégorie : <button type="button" (click)="ajoutCategorie()">+</button>
+    <p *ngFor="let champ of getCategory().controls; let i = index;" formArrayName="categorie">
+      Categorie {{i+1}} : <input type="text" [formControlName]="i">
+    </p>
+  </div>
+
+  <p>
+    <button type="submit" [disabled]="myFormGroup.invalid">Valider</button>
+  </p>
+</form>
