@@ -1,0 +1,9 @@
+Créer un formulaire de création de fan de série
+
+chaque fan sera défini par son nom, date de naissance, 
+sa liste de série préférée (aucune limite du nombre de série)
+(liste de string)
+
+les fans devront être stocké dans une liste au niveau d'un service
+
+Bonus : Vérifier que le fan à bien 13 ans ou plus
