@@ -24,6 +24,8 @@ import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { Exo3Component } from './components/exercices/exo3/exo3.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
+import { Exo4Component } from './components/exercices/exo4/exo4.component';
+import { CreateComponent } from './components/exercices/exo4/create/create.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { Demo7Component } from './components/demo/demo7/demo7.component';
     Exo2childComponent,
     Demo6Component,
     Exo3Component,
-    Demo7Component
+    Demo7Component,
+    Exo4Component,
+    CreateComponent
   ],
   imports: [
     BrowserModule,

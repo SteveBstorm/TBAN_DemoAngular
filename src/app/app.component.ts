@@ -24,6 +24,7 @@ export class AppComponent {
       {title : "Chronomètre", url : "exercices/exo1"},
       {title : "Liste article", url : "exercices/exo2"},
       {title : "Liste article ++", url : "exercices/exo3"},
+      {title : "Fan List", url : "exercices/exo4"},
     ]}
   ]
 }

@@ -1,0 +1,22 @@
+<h3>Création d'un fan</h3>
+<form [formGroup]="myFormGroup" (ngSubmit)="submitForm()">
+  <p>
+    Nom : <input type="text" formControlName="name">
+  </p>
+  <p>
+    Date de naissance : <input type="date" formControlName="birthDate">
+  </p>
+  <p style="color: red;" *ngIf="myFormGroup.controls['birthDate'].invalid && myFormGroup.controls['birthDate'].touched">
+    {{myFormGroup.controls['birthDate'].errors ? myFormGroup.controls['birthDate'].errors['AgeError'] : ''}}
+  </p>
+  <div>
+    <h4>Séries favorites
+      <button type="button" (click)="addFavorite()">Ajouter</button>
+    </h4>
+    <p formArrayName="favoritesShow" *ngFor="let fav of getFavorite().controls; let i = index">
+      Série {{i+1}} : <input type="text" [formControlName]="i">
+       <button type="button" (click)="removeFavorite(i)">X</button>
+    </p>
+  </div>
+  <button type="submit" [disabled]="myFormGroup.invalid">Valider</button>
+</form>
