@@ -17,7 +17,7 @@ export class CreateComponent implements OnInit {
 
   myFormGroup! : FormGroup
 
-  fan : Fan = {name : 'toto', birthDate : new Date(), favoritesShow : ['machin', 'bidule']}
+  // fan : Fan = {name : 'toto', birthDate : new Date(), favoritesShow : ['machin', 'bidule']}
 
   constructor(
     private _builder : FormBuilder,
@@ -27,8 +27,8 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
     this.initForm()
 
-    this.myFormGroup.patchValue(this.fan)
-    console.log(this.myFormGroup.value)
+    // this.myFormGroup.patchValue(this.fan)
+    // console.log(this.myFormGroup.value)
   }
 
   initForm() {
@@ -37,9 +37,9 @@ export class CreateComponent implements OnInit {
       birthDate : [null, AgeValidator(13)],
       favoritesShow : this._builder.array([])
     })
-    this.fan.favoritesShow.forEach(show => {
-      this.getFavorite().push(new FormControl(show))
-    })
+    // this.fan.favoritesShow.forEach(show => {
+    //   this.getFavorite().push(new FormControl(show))
+    // })
   }
 
   getFavorite() : FormArray {

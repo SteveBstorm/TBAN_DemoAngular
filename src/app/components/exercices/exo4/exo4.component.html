@@ -1,4 +1,11 @@
 <h3>Registre des fans</h3>
-<a routerLink="create">Ajout d'un fan</a>
+<a routerLink="./../create">Ajout d'un fan</a>
 <hr />
-<router-outlet></router-outlet>
+<h4>Liste de fans</h4>
+<ul>
+  <li *ngFor="let f of myList; let i = index;">
+    <a [routerLink]="'./../details/'+i">{{f.name}}</a> &nbsp;
+    <button (click)="update(i)">Update</button> &nbsp;
+    <button (click)="delete(i)">Delete</button>
+  </li>
+</ul>

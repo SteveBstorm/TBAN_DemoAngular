@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Fan } from './models/fan.model';
+import { FanService } from './service/fan.service';
 
 @Component({
   selector: 'app-exo4',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exo4Component implements OnInit {
 
-  constructor() { }
+  myList : Fan[] =[]
+
+  constructor(
+    private _service : FanService,
+    private _router : Router
+  ) { }
 
   ngOnInit(): void {
+    this.myList = this._service.fanList
   }
 
+  update(index : number) {
+    this._router.navigate(['exercices/update/'+index])
+  }
+
+  delete(index : number) {
+    this._service.delete(index);
+  }
 }

@@ -30,6 +30,8 @@ import { FourofourComponent } from './components/fourofour/fourofour.component';
 import { Demo8Component } from './components/demo/demo8/demo8.component';
 import { Demo9Component } from './components/demo/demo9/demo9.component';
 import { RecupComponent } from './components/demo/demo9/recup/recup.component';
+import { UpdateComponent } from './components/exercices/exo4/update/update.component';
+import { DetailsComponent } from './components/exercices/exo4/details/details.component';
 
 
 @NgModule({
@@ -59,7 +61,9 @@ import { RecupComponent } from './components/demo/demo9/recup/recup.component';
     FourofourComponent,
     Demo8Component,
     Demo9Component,
-    RecupComponent
+    RecupComponent,
+    UpdateComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
