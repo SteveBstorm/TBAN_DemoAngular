@@ -4,8 +4,8 @@ import { FakeauthService } from './fakeauth.service';
 @Component({
   selector: 'app-demo6',
   templateUrl: './demo6.component.html',
-  styleUrls: ['./demo6.component.scss'],
-  providers : [FakeauthService]
+  styleUrls: ['./demo6.component.scss']
+  //providers : [FakeauthService]
 })
 export class Demo6Component implements OnInit {
 

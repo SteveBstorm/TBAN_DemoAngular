@@ -26,6 +26,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
 import { Exo4Component } from './components/exercices/exo4/exo4.component';
 import { CreateComponent } from './components/exercices/exo4/create/create.component';
+import { FourofourComponent } from './components/fourofour/fourofour.component';
+import { Demo8Component } from './components/demo/demo8/demo8.component';
+import { Demo9Component } from './components/demo/demo9/demo9.component';
+import { RecupComponent } from './components/demo/demo9/recup/recup.component';
 
 
 @NgModule({
@@ -51,7 +55,11 @@ import { CreateComponent } from './components/exercices/exo4/create/create.compo
     Exo3Component,
     Demo7Component,
     Exo4Component,
-    CreateComponent
+    CreateComponent,
+    FourofourComponent,
+    Demo8Component,
+    Demo9Component,
+    RecupComponent
   ],
   imports: [
     BrowserModule,

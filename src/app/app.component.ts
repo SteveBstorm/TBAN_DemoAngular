@@ -19,6 +19,8 @@ export class AppComponent {
       {title : "D5 - @Input/@Output", url : "demo/demo5"},
       {title : "D6 - Injection et service", url : "demo/demo6"},
       {title : "D7 - Reactive Forms", url : "demo/demo7"},
+      {title : "D8 - Guards", url : "demo/demo8"},
+      {title : "D9 - Routing", url : "demo/demo9"},
     ]},
     {title : "Exercices", children : [
       {title : "Chronomètre", url : "exercices/exo1"},
