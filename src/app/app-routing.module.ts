@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { Demo1Component } from './components/demo/demo1/demo1.component';
+import { Demo10Component } from './components/demo/demo10/demo10.component';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
@@ -41,7 +42,9 @@ const routes: Routes = [
     {path : "demo7", component : Demo7Component},
     {path : "demo8", canActivate : [AuthGuard], component : Demo8Component},
     {path : "demo9", component : Demo9Component},
-    {path : "recup/:id", resolve : {monArticle : ArticleResolver}, component : RecupComponent}
+    {path : "recup/:id", resolve : {monArticle : ArticleResolver}, component : RecupComponent},
+    {path : "demo10", component : Demo10Component},
+
   ]},
   {path : "exercices", component : ExercicesComponent, children : [
     {path : "exo1", component : Exo1Component},

@@ -32,7 +32,10 @@ import { Demo9Component } from './components/demo/demo9/demo9.component';
 import { RecupComponent } from './components/demo/demo9/recup/recup.component';
 import { UpdateComponent } from './components/exercices/exo4/update/update.component';
 import { DetailsComponent } from './components/exercices/exo4/details/details.component';
+import { Demo10Component } from './components/demo/demo10/demo10.component';
 
+
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -63,13 +66,15 @@ import { DetailsComponent } from './components/exercices/exo4/details/details.co
     Demo9Component,
     RecupComponent,
     UpdateComponent,
-    DetailsComponent
+    DetailsComponent,
+    Demo10Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
